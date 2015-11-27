@@ -28,8 +28,17 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
+        <script type="text/javascript">
+        	function onDeviceReady() {
+        var ref = window.open('http://115.119.117.86:8905/home/Muraai/cordys1/WiproCSO/Web/html/Login.htm', '_blank', 'location=no');
+        ref.addEventListener('loadstart', function() {  });
+        ref.addEventListener('loadstop', function() { });
+        ref.addEventListener('exit', function() {  });
+   }
+        </script>
+         
     </head>
-    <body onload="window.location.href='http://115.119.117.86:8905/home/Muraai/cordys1/WiproCSO/Web/html/Login.htm'" >
+    <body onload="onDeviceReady()" >
 
 	 
     </body>
